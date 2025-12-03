@@ -30,10 +30,9 @@ namespace BangumiApi
         /// 创建一个带有AccessToken的API客户端
         /// </summary>
         /// <param name="authProvider">认证提供者 - 默认提供了一个BangumiAuthenticationProvider</param>
-        /// <param name="accessToken">访问令牌</param>
         /// <param name="baseUrl">API基础URL，默认为"https://api.bgm.tv"</param>
         /// <returns>Bangumi API客户端</returns>
-        public static ApiClient CreateAuthenticatedClient(IAuthenticationProvider authProvider ,string accessToken, string baseUrl = DefaultBaseUrl)
+        public static ApiClient CreateAuthenticatedClient(IAuthenticationProvider authProvider, string baseUrl = DefaultBaseUrl)
         {
             // 创建一个简单的认证提供者，用于添加Bearer token
             HttpClientRequestAdapter adapter = new(authProvider)

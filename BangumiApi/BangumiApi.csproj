@@ -5,11 +5,15 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <PackageId>BangumiApiClient.NET</PackageId>
-        <Version>1.0.0</Version>
+        <Version>1.1.0</Version>
         <Authors>Yuyuko</Authors>
         <Product> Bangumi API 客户端</Product>
         <Description>用于访问 Bangumi API 的 .NET 客户端库</Description>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/DoraemonQWQ/BangumiApi</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/DoraemonQWQ/BangumiApi</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>Bangumi;API;Client;.NET</PackageTags>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <IsPackable>true</IsPackable>
     </PropertyGroup>
@@ -25,6 +29,7 @@
 
     <ItemGroup>
       <PackageReference Include="Microsoft.Kiota.Bundle" Version="1.21.0" />
+        <None Include="../README.md" Pack="true" PackagePath="\"/>
     </ItemGroup>
 
 </Project>

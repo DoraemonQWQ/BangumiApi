@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 #
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BangumiApi", "BangumiApi\BangumiApi.csproj", "{2122E102-631D-4105-B327-AD96D0B9F402}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BangumiApi.Test", "BangumiApi.Test\BangumiApi.Test.csproj", "{1324A5EE-97A6-4EBF-B9DB-38EF4D5501F9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2122E102-631D-4105-B327-AD96D0B9F402} = {2122E102-631D-4105-B327-AD96D0B9F402}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +18,9 @@ Global
 		{2122E102-631D-4105-B327-AD96D0B9F402}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2122E102-631D-4105-B327-AD96D0B9F402}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2122E102-631D-4105-B327-AD96D0B9F402}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1324A5EE-97A6-4EBF-B9DB-38EF4D5501F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1324A5EE-97A6-4EBF-B9DB-38EF4D5501F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1324A5EE-97A6-4EBF-B9DB-38EF4D5501F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1324A5EE-97A6-4EBF-B9DB-38EF4D5501F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
