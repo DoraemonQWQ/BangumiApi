@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <PackageId>BangumiApiClient.NET</PackageId>
+        <Version>1.0.0</Version>
+        <Authors>Yuyuko</Authors>
+        <Product> Bangumi API 客户端</Product>
+        <Description>用于访问 Bangumi API 的 .NET 客户端库</Description>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <IsPackable>true</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Kiota.Bundle" Version="1.21.0" />
+    </ItemGroup>
+
+</Project>
