@@ -32,9 +32,8 @@ public static class BangumiAuthenticationTokenAccess
     /// <param name="authorizationCode">授权码</param>
     public static async Task<OAuthAuthorizedResponse?> GetOAuthAuthorizedDataAsync(string userAgent,string clientId, string clientSecret, string redirectUri, string authorizationCode)
     { 
-        using HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, "https://bgm.tv/oauth/token");
+        using HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, "https://bgm.tv/oauth/access_token");
         request.Headers.Add("User-Agent", userAgent);
-        request.Headers.Add("Content-Type", "application/x-www-form-urlencoded");
         request.Content = new FormUrlEncodedContent(new Dictionary<string, string>
         {
             ["client_id"] = clientId,
@@ -60,10 +59,9 @@ public static class BangumiAuthenticationTokenAccess
     /// <param name="refreshToken">刷新令牌</param>
     public static async Task<OAuthAuthorizedResponse?> RefreshOAuthTokenAsync(string userAgent,string clientId, string clientSecret, string refreshToken)
     { 
-        using HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, "https://bgm.tv/oauth/token");
+        using HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, "https://bgm.tv/oauth/access_token");
         
         request.Headers.Add("User-Agent", userAgent);
-        request.Headers.Add("Content-Type", "application/x-www-form-urlencoded");
         request.Content = new FormUrlEncodedContent(new Dictionary<string, string>
         {
             ["client_id"] = clientId,

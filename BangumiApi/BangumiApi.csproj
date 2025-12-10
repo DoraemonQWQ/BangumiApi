@@ -5,7 +5,7 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <PackageId>BangumiApiClient.NET</PackageId>
-        <Version>1.1.0</Version>
+        <Version>1.1.1</Version>
         <Authors>Yuyuko</Authors>
         <Product> Bangumi API 客户端</Product>
         <Description>用于访问 Bangumi API 的 .NET 客户端库</Description>
